@@ -24,7 +24,7 @@ const person1={
 }
 
 const person2=Object.assign({},person1);  // here it will copy person1 object to the empty object 
-// Note : It will do shallow copy
+// Note : It will also do shallow copy but here it is doing like shallow copy
 
 person1.name="XYZ";
 

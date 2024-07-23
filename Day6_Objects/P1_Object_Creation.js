@@ -36,7 +36,7 @@ const obj3 = {
 };
 
 //when there is key with multiple words you cannot access using dot notation
-//When the key have multiple words then put that key in double quotes and try to access using the square notion
+//When the key have multiple words  Ex-is passed then put that key in double quotes and try to access using the square notion
 // console.log(obj3.is passed); //This will show the error
 console.log(obj3["is passed"]);
 

@@ -3,7 +3,7 @@ let info={
     age: 30,
     city: "New York",
     address:function(){
-        console.log(`My name is ${this.name} and I live in ${this.city}. I am ${this.age} years old.`); //this keyword refers to the object that is executing the function (this.name);
+        console.log(`My name is ${this.name} and I live in ${this.city}. I am ${this.age} years old.`); //this keyword refers to the object that is executing this function (this.name);
         //this keyword also called implicit binding
     }
 

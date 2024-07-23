@@ -26,7 +26,7 @@ if (info1.address !== undefined) {
 }
 
 // Solution 2: Optional Chaining
-console.log(info1.address?.city); // This will log undefined if address is undefined not check not the city
+console.log(info1.address?.city); // This will log undefined if address is undefined not check for the city further
 
 
 const info2 = {
@@ -43,6 +43,6 @@ info2.greet();
 
 // the solution is optional chaining
 
-info2.msg_fun?.(); //this means if there is a not function with a name msg_fun then don't give error.
+info2.msg_fun?.(); //this means if there is a not function in a info2 object with a name msg_fun then don't give error.
 
 console.log(info2.msg_fun?.()); //Output : undefined

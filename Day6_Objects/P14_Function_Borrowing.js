@@ -1,30 +1,32 @@
-// const user1={
-//     name:"Azaan",
-//     age:23,
-//     sayHi(){
-//         console.log(this.name);
-//     }
-// };
-// const user2={
-//     name:"Aznul",
-//     age:232,
-//     sayHi(){
-//         console.log(this.name);
-//     }
-// };
-// const user3={
-//     name:"Saboor",
-//     age:34,
-//     sayHi(){
-//         console.log(this.name);
-//     }
-// };
+/* 
+const user1={
+    name:"Azaan",
+    age:23,
+    sayHi(){
+        console.log(this.name);
+    }
+};
+const user2={
+    name:"Aznul",
+    age:232,
+    sayHi(){
+        console.log(this.name);
+    }
+};
+const user3={
+    name:"Saboor",
+    age:34,
+    sayHi(){
+        console.log(this.name);
+    }
+};
 
-// user1.sayHi();
-// user2.sayHi();
-// user3.sayHi();
+user1.sayHi();
+user2.sayHi();
+user3.sayHi();
 
-//As we are looking we are writing the same function sayHi() in three of the user so we can optimize it using function borrowing which user call, apply and bind which is used only for function
+As we are looking we are writing the same function sayHi() in three of the users so we can optimize it by using function borrowing which user call, apply and bind which is used only for function
+*/
 
 const user1 = {
   name: "Azaan",
@@ -45,7 +47,7 @@ function sayHi(){
     console.log(this.name);
 }
 
-// user1.sayHi(); //this will produce the error because user1 want to access the function that is outside its body
+// user1.sayHi(); //this will produce the error because user1 object want to access the function that is outside its body
 //We can do this by call, apply and bind
 
 sayHi.call(user1); //the value of this is user1
@@ -85,7 +87,7 @@ user_n={
 
 //This is called function borrowing where the object can borrow the function
 
-//apply also works same as call but you have to pass the arguements in the form of list
+//apply also works same as call but you have to pass the arguements in the form of list like below
 
 sayHi.apply(user4,["Engineer-Majdoor","Hockey"]);
 sayHi.apply(user5,["Engineer-CSE","Hockey"]);

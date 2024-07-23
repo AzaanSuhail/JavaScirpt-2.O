@@ -17,7 +17,7 @@ console.log(address);
 console.log(courses);
 
 
-//if i want to change the key name
+//if i want to change the key name to username 
 let {name:username}=info;
 
 let{address:{city}}=info; //it means city key inside the address object
